@@ -1,0 +1,19 @@
+version: 'v0.0.1'
+services:
+  mysql:
+    image: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: server
+      MYSQL_USER: server
+      MYSQL_PASSWORD: 123456
+    restart: always
+    volumes:
+      - ./mysql:/var/lib/mysql
+  server:
+    build: .
+    ports:
+      - "8080:8080"
+    restart: always

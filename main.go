@@ -21,6 +21,7 @@ func main() {
 
 	rootCmd.AddCommand(commands.VersionCmd)
 	rootCmd.AddCommand(commands.ServerCmd)
+	rootCmd.AddCommand(commands.WebCmd)
 
 	// Execute the root command, which will run the "hello" command if it
 	// is specified on the command line

@@ -3,10 +3,10 @@ package main
 import (
 	"flag"
 	"os"
-	"server/pkg/logs"
+	"server/internal/logs"
 )
 
-func main() {
+func demo() {
 	exe, _ := os.Executable()
 
 	logFlag := flag.String("log", "stdFlags", "log flags")

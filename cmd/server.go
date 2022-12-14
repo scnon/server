@@ -5,8 +5,8 @@ import (
 	"log"
 	"net"
 
+	pb "server/internal/proto"
 	"server/internal/server"
-	pb "server/pkg/proto"
 
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc"

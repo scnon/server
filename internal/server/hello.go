@@ -2,7 +2,7 @@ package server
 
 import (
 	"context"
-	pb "server/pkg/proto"
+	pb "server/internal/proto"
 )
 
 func (s *Server) SayHelloAgain(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {

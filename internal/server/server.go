@@ -2,7 +2,7 @@ package server
 
 import (
 	"context"
-	pb "server/pkg/proto"
+	pb "server/internal/proto"
 )
 
 type Server struct {
